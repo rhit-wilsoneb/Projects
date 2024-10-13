@@ -21,4 +21,6 @@
 
  All questions are gathered from Open Trivia Database
  The design of the quiz questions and responses was inspired by zyBooks
+ The server is NOT mine. That is a sample server that we used in my Web Development class given to the class by the professor Dr. Olga Scrivner
+ It is simply used to run the web app which is entirely written by me
  

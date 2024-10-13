@@ -3,13 +3,8 @@ import socket
 import time
 import signal
 
-# Live coding:
-# 0. Show how you would load this into your IDE.
-# 1. Walk through the parts of handling a HTTP request.
-# 2. Run and connect to this server in the browser.
-# 3. Create a file called hello.html containing the message, "Hello, World!".
-# 4. Set the response body to the read-in contents of hello.html.
-#       Now you should be able to change hello.html and refresh the browser to see the changes, without restarting the server!
+# Read the READ_ME, this server is NOT written by me
+# @Author, Dr. Olga Scrivner
 
 def main():
 
