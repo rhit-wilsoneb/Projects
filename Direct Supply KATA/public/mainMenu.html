@@ -1,0 +1,61 @@
+<!-- Lists options for the quiz the user can take
+All options come from opentdb.com 
+-->
+<h1>Choose your options to quiz yourself!</h1>
+
+<fieldset id="options">
+    <legend>Options:</legend>
+    <h3>Number of questions</h3>
+    <input id="num" type="number" min="1" max="50" value = 10 required>
+    <h3>Category</h3>
+    <select id="category">
+        <!-- Values are taken from inspecting the open trivia page -->
+        <option id="anyC" value="any">Any Category</option>
+        <option id="9" value="9">General Knowledge</option>
+        <option id="10" value="10">Entertainment: Books</option>
+        <option id="11" value="11">Entertainment: Film</option>
+        <option id="12" value="12">Entertainment: Music</option>
+        <option id="13" value="13">Entertainment: Musicals and Theatres</option>
+        <option id="14" value="14">Entertainment: Television</option>
+        <option id="15" value="15">Entertainment: Video Games</option>
+        <option id="16" value="16">Entertainment: Board Games</option>
+        <option id="17" value="17">Science and Nature</option>
+        <option id="18" value="18">Science: Computers</option>
+        <option id="19" value="19">Science: Mathematics</option>
+        <option id="20" value="20">Mythology</option>
+        <option id="21" value="21">Sports</option>
+        <option id="22" value="22">Geography</option>
+        <option id="23" value="23">History</option>
+        <option id="24" value="24">Politics</option>
+        <option id="25" value="25">Art</option>
+        <option id="26" value="26">Celebrities</option>
+        <option id="27" value="27">Animals</option>
+        <option id="28" value="28">Vehicles</option>
+        <option id="29" value="29">Entertainment: Comics</option>
+        <option id="30" value="30">Science: Gadgets</option>
+        <option id="31" value="31">Entertainment: Japanese Anime and Manga</option>
+        <option id="32" value="32">Entertainment: Cartoon and Animation</option>
+    </select>
+    <h3>Difficulty</h3>
+    <select id="difficulty">
+        <option id="anyD" value="any">Any Difficulty</option>
+        <option id="easy" value="easy">Easy</option>
+        <option id="medium" value="medium">Medium</option>
+        <option id="hard" value="hard">Hard</option>
+    </select>
+    <h3>Type</h3>
+    <select id="type">
+        <option id="anyT" value="any">Any Type</option>
+        <option id="multiple" value="multiple">Multiple Choice</option>
+        <option id="boolean" value="boolean">True / False</option>
+    </select>
+</fieldset>
+<br>
+
+<label for="nameInput">Name: </label>
+<input type="text" id="nameInput" name="nameInput">
+<br>
+<button id="optionSubmission" class = "menuButton">Start Quiz!</button>
+<br>
+<button id="highscores" class = "menuButton">High Scores!</button>
+
