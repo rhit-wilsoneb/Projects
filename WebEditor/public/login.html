@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./styles/login.css">
+    </head>
+
+    <body>
+        <div id="login" class="hidden">
+            <span>
+                <label for="username">USERNAME:</label>
+                <input type="text" id="username" name="username">
+            </span>
+
+            <span> 
+                <label for="password">PASSWORD:</label>
+                <input type="password" id="password" name="password">
+            </span>
+
+            <div id="loginButtons">
+                <button id="loginButton">LOGIN</button>
+                <button id="signupButton">SIGN-UP</button>
+            </div>
+        </div>
+
+        <div id="signup" class="hidden">
+            <span>
+                <label for="newusername">USERNAME:</label>
+                <input type="text" id="newusername" name="newusername" requrired>
+            </span>
+            <span>
+                <label for="newpassword">PASSWORD:</label>
+                <input type="password" id="newpassword" name="newpassword" required>
+            </span>
+            <span>
+                <label for="confirmpassword">CONFIRM PASSWORD:</label>
+                <input type="password" id="confirmpassword" name="confirmpassword" required>
+            </span>
+            <div id="signOptions">
+                <button id="return">RETURN</button>
+                <button id="create">CREATE ACCOUNT</button>
+            </div>
+        </div>
+
+        <script src="./scripts/login.js" async defer></script>
+    </body>
+</html>
