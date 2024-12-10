@@ -1,0 +1,356 @@
+textarea {
+    width: 95%;
+    height: 88%;
+    resize: none;
+    background-color: #303338;
+    color: white;
+}
+
+#user, #buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+body{
+    display: grid;
+    background-color: #1f1f1f;
+    grid-template-columns: 10vw 40vw 40vw;
+    grid-template-rows: 8vh 65vh 20vh;
+    grid-template-areas: 
+    "nav nav nav"
+    "side input output"
+    "cut input output"
+    ;
+    color: white;
+}
+
+.shortcutDiv{
+    grid-area: cut;
+    border: 2px solid white;
+    z-index: 3;
+    width: 8vw;
+    height: 27vh;
+    position: absolute;
+    left: 0;
+    top: 73vh;
+    display: flex;
+    gap: 2px;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.shortcutDiv > span{
+    font-size: 12px;
+    margin:2px;
+    
+}
+
+.container-fluid{
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #303338;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5vh;
+    border: 2px solid white;
+    z-index: 2;
+}
+
+#exampleModalCenter{
+    color: black;
+}
+
+.modal-content{
+    background-color: #CECECE;
+}
+
+#user{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#username{
+    margin: 10px;
+}
+
+#sideBar{
+    grid-area: side;
+    height: 68vh;
+    width: 8vw;
+    position: absolute;
+    left: 0;
+    top: 5vh;
+    background-color: #303338;
+    border: 2px solid white;
+    border-top: none;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60vh 8vh;
+}
+
+.inputDiv{
+    grid-area: input;
+}
+
+.outputDiv{
+    grid-area: output;
+}
+
+iframe {
+    width: 110%;
+    height: 105.5%;
+}
+
+.inputDiv > div{
+    height: 30%;
+    padding-bottom: 20px;
+}
+
+
+
+#sharebtn, #savebtn, #runbtn{
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+}
+
+#sideButtons{
+    display: flex;
+}
+
+#file{
+    border: gray solid 2px;
+    background-color: #303338;
+    color: white;
+    background-color: #800000;
+    font-size: 10px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#file:hover{
+    color: lightblue;
+}
+
+#files{
+    display: flex;
+    flex-direction: column;
+    height: 98%;
+    width: 98%;
+    object-fit: fill;
+    margin: 5px;
+}
+
+#fileDiv{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    height: 25px;
+    gap: 2px;
+    align-items: center;
+}
+
+#deleteButton{
+    max-height: 65%;
+    max-width: 65%;
+    object-fit: fill;
+}
+
+#backToLogin{
+    color: rgb(30, 110, 180);
+    margin-top: 10px;
+}
+
+#backToLogin:hover{
+    color: lightblue;
+}
+
+#inbox{
+    width: 35px;
+    height: 20px;
+    object-fit: fill;
+}
+
+#pen{
+height: 50%;
+width: 50%;
+object-fit: contain;
+}
+
+#nameDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    height: 5vh;
+}
+
+#displayFileName, #editFileName{
+    height: 5vh;
+    width: 120px;
+    object-fit: fill;
+    text-align: center;
+    vertical-align: center;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#notification{
+    position: absolute;
+    top: -5px;
+    left: 26px;
+}
+
+#profileDisplay{
+    visibility: hidden;
+    position: absolute;
+    top: calc(100vh - 18vw - 40px);
+    left: 30.5vw;
+    width: 39vw;
+    height: 18vw;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: (6, 1fr);
+    z-index: 4;
+}
+
+#profileBackground{
+    visibility: hidden;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-image: url('./../images/starBackground.PNG');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#profile{
+    width: 3vw;
+    height: 3vw;
+}
+
+#currentPicture{
+    visibility: hidden;
+    z-index: 4;
+    position: absolute;
+    top: calc((100vh - 18vw - 40px) / 2 - 10vw);
+    left: 40vw;
+    width: 20vw;
+    height: 20vw;
+
+}
+
+#backButton{
+    visibility: hidden;
+    z-index: 6;
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 20px;
+    left: calc(90vw - 20px); 
+}
+
+#mail{
+    position: relative;
+}
+
+#messageDisplay{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 20vw;
+    width: 80vw;
+    height: 100vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    background-color: #CECECE;
+    gap: 5px;
+    color: black;
+}
+
+#fileDisplay{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20vw;
+    height: 100vh;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    background-color: #CECECE;
+    gap: 5px;
+    color: black;
+    align-items: center;
+}
+
+#headers{
+    
+    display: grid;
+    grid-template-columns: 15vw 15vw 10vw 10vw 10vw 20vw;
+    grid-template-rows: 20px;
+    margin: 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#header{
+    
+    display: grid;
+    grid-template-columns: 20vw;
+    grid-template-rows: 20px;
+    margin: 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.messageDiv{
+    display: grid;
+    grid-template-columns: 15vw 15vw 10vw 10vw 10vw 10vw 10vw;
+    grid-template-rows: 20px;
+    margin: 2px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#closeMail{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    top: calc(100vh - 80px);
+    left: calc(100vw - 110px);
+    z-index: 7;
+    visibility: hidden;
+}
+
+.newName{
+    width: 8vw;
+    height: 15px;
+}
+
+#deleteModal{
+    color: black;
+}
+
+#profilePicture{
+    height: 4vh;
+    width: 4vh;
+}
