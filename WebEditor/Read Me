@@ -1,0 +1,3 @@
+Authors: Ethan Wilson and Colin Ripperda
+Database and needed folders will be created when the application is loaded if they are not already
+Frameworks: Pickledb, Flask, Bootstrap
